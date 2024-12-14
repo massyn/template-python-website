@@ -18,7 +18,7 @@ jobs:
 
       - name: build
         run: |
-        echo hello world > build/index.html
+          echo hello world > build/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
