@@ -18,6 +18,7 @@ jobs:
 
       - name: build
         run: |
+          mkdir build
           echo hello world > build/index.html
 
       - name: Setup Pages
