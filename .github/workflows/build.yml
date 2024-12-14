@@ -28,8 +28,7 @@ jobs:
 
       - name: build
         run: |
-          mkdir build
-          echo hello world > build/index.html
+          python generate.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
