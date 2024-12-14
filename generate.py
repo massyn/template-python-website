@@ -23,6 +23,8 @@ def main():
     print(f"src = {args.src}")
     print(f"dest = {args.dest}")
 
+    os.makedirs(args.dest, exist_ok=True)
+
     with open(f"{args.src}/config.yml","rt",encoding='utf-8') as y:
         cfg = yaml.safe_load(y)
 
